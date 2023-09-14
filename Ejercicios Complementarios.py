@@ -51,7 +51,7 @@ un valor decimal que represente el descuento aplicado al artículo. Por ejemplo,
 quieres aplicar un 25% de descuento, dale un valor de 0,25. El valor 1 equivaldría al
 100% y el valor 0 al 0%"""
 print("----------7----------")
-descuento = 15
+descuento = 0.15
 print(f"Descuento: {descuento}")
 print(" ")
 
@@ -134,6 +134,6 @@ print(" ")
 """16. Por último, con la variable con el nombre en mayúsculas, aplica un método parecido
 para que se transforme todo en minúsculas excepto la primera letra"""
 print("----------16----------")
-nombre_minusculas = nombre_mayusculas.lower()
-print("Nombre Final: " + nombre_minusculas.replace("u", "U"))
+nombre_minusculas = nombre_mayusculas.title()
+print(nombre_minusculas)
 print(" ")
