@@ -81,8 +81,9 @@ print(" ")
 corresponde. Por ejemplo: 1000 minutos son 16 horas y 40 minutos."""
 print("----------7----------")
 minutos = int(input("Ingrese la cantidad de Minutos: "))
-horas = minutos / 60
-print(f"{minutos} Minutos equivalen a {horas:.2f} Horas")
+horas = int(minutos / 60)
+minutos_restantes = minutos % 60
+print(f"{minutos} Minutos equivalen a {horas:.2f} Horas y {minutos_restantes} Minutos")
 print(" ")
 
 """8.	Un vendedor recibe un sueldo base más un 10% extra por comisión de sus ventas, el vendedor desea saber
@@ -218,11 +219,11 @@ print(" ")
 
 """20. Hacer otra versión del programa, pero esta vez almacenado todo en una única variable con formato DDMMAAA."""
 print("----------20----------")
-fecha = int(input("Ingrese su Día de nacimiento: ")), int(input("Ingrese su Mes de nacimiento: ")), int(input("Ingrese su Año de nacimiento: "))
-dia = (fecha[0])
-mes = (fecha[1])
-a = (fecha[2])
-print(f"{dia}/{mes}/{a}")
+fecha = input("Ingrese su fecha de nacimiento en formato: (DDMMAA): ")
+dia = fecha[0:2]
+mes = fecha[2:4]
+año = fecha[4:8]
+print(f"{dia}/{mes}/{año}")
 print(" ")
 
 """21. Una pareja de motociclistas necesita hacer ciertos cálculos antes de emprender un viaje en moto,
